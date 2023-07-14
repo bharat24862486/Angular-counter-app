@@ -1,0 +1,13 @@
+<div class="counter-app">
+    <div class="counter">
+      <h2>Hello, World!</h2>
+      <h3>Counter App</h3>
+      <button (click)="decrement()">-</button>
+      <span [ngClass]="{'positive': count > 0, 'negative': count < 0}">{{ count }}</span>
+      <button (click)="increment()">+</button>
+      <div *ngIf="count === 0" class="message">The count is zero.</div>
+      <div *ngIf="count > 0" class="message">The count is positive.</div>
+      <div *ngIf="count < 0" class="message">The count is negative.</div>
+    </div>
+  </div>
+  
